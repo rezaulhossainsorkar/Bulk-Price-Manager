@@ -1,0 +1,95 @@
+/**
+ * BonikPress Design System
+ * Global Color Tokens
+ */
+
+/* ==========================================================================
+   Light Mode
+   ========================================================================== */
+
+:root {
+	/* Primary */
+	--bp-primary: #087443;
+	--bp-primary-hover: #065c36;
+
+	/* Primary Gradient */
+	--bp-primary-gradient: linear-gradient(
+		135deg,
+		#087443 0%,
+		#16a463 100%
+	);
+
+	--bp-primary-gradient-start: #087443;
+	--bp-primary-gradient-end: #16a463;
+
+	/* Secondary */
+	--bp-secondary: #16a463;
+	--bp-secondary-hover: #0d8a52;
+
+	/* Secondary Gradient */
+	--bp-secondary-gradient: linear-gradient(
+		135deg,
+		#16a463 0%,
+		#087443 100%
+	);
+
+	--bp-secondary-gradient-start: #16a463;
+	--bp-secondary-gradient-end: #087443;
+
+	/* Background */
+	--bp-background: #ffffff;
+	--bp-background-light: #f8faf9;
+
+	/* Text */
+	--bp-text: #17211c;
+	--bp-text-muted: #64736b;
+
+	/* Border */
+	--bp-border: #dce5e0;
+}
+
+
+/* ==========================================================================
+   Dark Mode
+   ========================================================================== */
+
+[data-theme="dark"] {
+	/* Primary */
+	--bp-primary: #22b573;
+	--bp-primary-hover: #35c982;
+
+	/* Primary Gradient */
+	--bp-primary-gradient: linear-gradient(
+		135deg,
+		#159a61 0%,
+		#35c982 100%
+	);
+
+	--bp-primary-gradient-start: #159a61;
+	--bp-primary-gradient-end: #35c982;
+
+	/* Secondary */
+	--bp-secondary: #35c982;
+	--bp-secondary-hover: #4ad894;
+
+	/* Secondary Gradient */
+	--bp-secondary-gradient: linear-gradient(
+		135deg,
+		#22b573 0%,
+		#159a61 100%
+	);
+
+	--bp-secondary-gradient-start: #22b573;
+	--bp-secondary-gradient-end: #159a61;
+
+	/* Background */
+	--bp-background: #17221c;
+	--bp-background-light: #0f1713;
+
+	/* Text */
+	--bp-text: #f1f7f3;
+	--bp-text-muted: #a7b8af;
+
+	/* Border */
+	--bp-border: #2b3a32;
+}
