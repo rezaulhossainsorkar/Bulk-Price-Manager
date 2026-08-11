@@ -1,0 +1,84 @@
+/* --------------------------------
+   Plugin Header
+--------------------------------- */
+
+.bpm-header {
+    margin: 0 0 24px;
+    padding: 28px 32px;
+
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-left: 4px solid #2271b1;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------
+   Header Content
+--------------------------------- */
+
+.bpm-header__content {
+    max-width: 900px;
+}
+
+.bpm-header__title {
+    margin: 0 0 8px;
+
+    color: #1d2327;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.bpm-header__description {
+    margin: 0;
+
+    max-width: 760px;
+
+    color: #646970;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* --------------------------------
+   Responsive
+--------------------------------- */
+
+/* Tablet */
+@media (max-width: 782px) {
+
+    .bpm-header {
+        margin-bottom: 20px;
+        padding: 24px;
+    }
+
+    .bpm-header__title {
+        font-size: 24px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .bpm-header {
+        margin-bottom: 16px;
+        padding: 20px;
+
+        border-radius: 4px;
+    }
+
+    .bpm-header__title {
+        margin-bottom: 6px;
+        font-size: 21px;
+    }
+
+    .bpm-header__description {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
