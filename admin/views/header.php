@@ -1,23 +1,24 @@
 <?php
-if (!defined('ABSPATH')) {
+
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
 
-<div class="bpm-header">
+<div class="bpmx-header">
 
-<div class="bpm-header__content">
+	<div class="bpmx-header__content">
 
-	<h1 class="bpm-header__title">
-		Bulk Price Manager
-	</h1>
+		<h1 class="bpmx-header__title">
+			BPMX Pricing Rules
+		</h1>
 
-	<p class="bpm-header__description">
-		Update prices across multiple WooCommerce products in one place.
-		Filter the products you need, choose a pricing operation, and apply
-		the changes in bulk.
-	</p>
+		<p class="bpmx-header__description">
+			Update prices across multiple WooCommerce products in one place.
+			Filter the products you need, choose a pricing operation, and apply
+			the changes in bulk.
+		</p>
 
-</div>
+	</div>
 
 </div>

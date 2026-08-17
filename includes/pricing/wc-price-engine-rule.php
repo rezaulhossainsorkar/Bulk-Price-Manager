@@ -10,8 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register pricing rule callback.
  */
 add_action(
-	'bpm_apply_changes',
-	'bpm_store_price_engine_rule',
+	'bpmx_apply_changes',
+	'bpmx_store_price_engine_rule',
 	20,
 	1
 );
@@ -21,7 +21,7 @@ add_action(
  *
  * @param array $pipeline_data Pricing pipeline data.
  */
-function bpm_store_price_engine_rule( $pipeline_data ) {
+function bpmx_store_price_engine_rule( $pipeline_data ) {
 
 	/*
 	 * Ensure a pricing rule exists.

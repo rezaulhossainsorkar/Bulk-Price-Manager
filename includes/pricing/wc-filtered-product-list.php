@@ -8,8 +8,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register callbacks.
  */
 add_action(
-	'bpm_apply_changes',
-	'bpm_store_selected_products',
+	'bpmx_apply_changes',
+	'bpmx_store_selected_products',
 	10,
 	1
 );
@@ -19,11 +19,9 @@ add_action(
  *
  * @param array $pipeline_data Pricing pipeline data.
  */
-function bpm_store_selected_products( $pipeline_data ) {
+function bpmx_store_selected_products( $pipeline_data ) {
 
 	if ( ! isset( $pipeline_data['products'] ) ) {
 		return;
 	}
-
-
 }

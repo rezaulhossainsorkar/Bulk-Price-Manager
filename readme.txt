@@ -1,4 +1,4 @@
-=== Bulk Price Manager by BonikPress ===
+=== BPMX Pricing Rules for WooCommerce ===
 Contributors: rezaulhossainsorkar
 Tags: woocommerce, bulk pricing, product pricing, price manager, bulk edit
 Requires at least: 5.2
@@ -12,7 +12,7 @@ Manage WooCommerce product pricing in bulk with flexible rule-based automation.
 
 == Description ==
 
-Bulk Price Manager helps WooCommerce store owners manage product prices in bulk using configurable pricing rules.
+BPMX Pricing Rules for WooCommerce helps WooCommerce store owners manage product prices in bulk using configurable pricing rules.
 
 Instead of manually editing products one by one, you can select the products you want to update and apply pricing changes to them in bulk.
 
@@ -39,10 +39,10 @@ The plugin is designed to make bulk price management simpler, faster, and easier
 
 == Installation ==
 
-1. Download and install Bulk Price Manager.
+1. Download and install BPMX Pricing Rules for WooCommerce.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Make sure WooCommerce is installed and active.
-4. Open 'Bulk Price Manager' from the WordPress admin menu.
+4. Open 'BPMX Pricing Rules' from the WordPress admin menu.
 5. Use the available filters to find the products you want to manage.
 6. Select the products you want to update.
 7. Configure your pricing rule.
@@ -52,11 +52,11 @@ The plugin is designed to make bulk price management simpler, faster, and easier
 
 = Does this plugin require WooCommerce? =
 
-Yes. Bulk Price Manager is designed to manage WooCommerce products and requires WooCommerce to be installed and active.
+Yes. BPMX Pricing Rules for WooCommerce is designed to manage WooCommerce products and requires WooCommerce to be installed and active.
 
-= Is Bulk Price Manager free? =
+= Is BPMX Pricing Rules for WooCommerce free? =
 
-Yes. Bulk Price Manager is currently available free of charge.
+Yes. BPMX Pricing Rules for WooCommerce is currently available free of charge.
 
 = Can I apply pricing changes to multiple products? =
 
@@ -79,11 +79,10 @@ Yes. Products can be filtered using the available product filters before selecti
 
 == License ==
 
-Bulk Price Manager is licensed under the GPL v2 or later.
+BPMX Pricing Rules for WooCommerce is licensed under the GPL v2 or later.
 
 This plugin is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
 
 == Credits ==
 
 Developed by Rezaul Hossain Sorkar.
-Brand: BonikPress.

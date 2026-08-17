@@ -2,7 +2,7 @@
    Plugin Header
 --------------------------------- */
 
-.bpm-header {
+.bpmx-header {
     margin: 0 0 24px;
     padding: 28px 32px;
 
@@ -19,11 +19,11 @@
    Header Content
 --------------------------------- */
 
-.bpm-header__content {
+.bpmx-header__content {
     max-width: 900px;
 }
 
-.bpm-header__title {
+.bpmx-header__title {
     margin: 0 0 8px;
 
     color: #1d2327;
@@ -33,7 +33,7 @@
     letter-spacing: -0.2px;
 }
 
-.bpm-header__description {
+.bpmx-header__description {
     margin: 0;
 
     max-width: 760px;
@@ -51,12 +51,12 @@
 /* Tablet */
 @media (max-width: 782px) {
 
-    .bpm-header {
+    .bpmx-header {
         margin-bottom: 20px;
         padding: 24px;
     }
 
-    .bpm-header__title {
+    .bpmx-header__title {
         font-size: 24px;
     }
 }
@@ -65,19 +65,19 @@
 /* Mobile */
 @media (max-width: 480px) {
 
-    .bpm-header {
+    .bpmx-header {
         margin-bottom: 16px;
         padding: 20px;
 
         border-radius: 4px;
     }
 
-    .bpm-header__title {
+    .bpmx-header__title {
         margin-bottom: 6px;
         font-size: 21px;
     }
 
-    .bpm-header__description {
+    .bpmx-header__description {
         font-size: 13px;
         line-height: 1.6;
     }

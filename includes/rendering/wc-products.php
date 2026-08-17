@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
@@ -10,8 +10,7 @@ if (!defined('ABSPATH')) {
  * @param array $filters Product filters and pagination settings.
  * @return array
  */
-function bpm_get_products($filters = array())
-{
+function bpmx_get_products( $filters = array() ) {
 
 	$args = array(
 		'limit' => 20,
@@ -21,7 +20,7 @@ function bpm_get_products($filters = array())
 	/*
 	 * Products per page.
 	 */
-	if (!empty($filters['per_page'])) {
+	if ( ! empty( $filters['per_page'] ) ) {
 
 		$args['limit'] = absint(
 			$filters['per_page']
@@ -32,7 +31,7 @@ function bpm_get_products($filters = array())
 	/*
 	 * Current page.
 	 */
-	if (!empty($filters['page'])) {
+	if ( ! empty( $filters['page'] ) ) {
 
 		$args['paged'] = absint(
 			$filters['page']
@@ -43,16 +42,16 @@ function bpm_get_products($filters = array())
 	/*
 	 * Search products by name or SKU.
 	 */
-	if (!empty($filters['search'])) {
+	if ( ! empty( $filters['search'] ) ) {
 
-		$args['bpm_search'] = $filters['search'];
+		$args['bpmx_search'] = $filters['search'];
 
 	}
 
 	/*
 	 * Filter by product category.
 	 */
-	if (!empty($filters['category'])) {
+	if ( ! empty( $filters['category'] ) ) {
 
 		$args['category'] = array(
 			$filters['category'],
@@ -63,7 +62,7 @@ function bpm_get_products($filters = array())
 	/*
 	 * Filter by product type.
 	 */
-	if (!empty($filters['type'])) {
+	if ( ! empty( $filters['type'] ) ) {
 
 		$args['type'] = $filters['type'];
 
@@ -72,7 +71,7 @@ function bpm_get_products($filters = array())
 	/*
 	 * Filter by stock status.
 	 */
-	if (!empty($filters['stock_status'])) {
+	if ( ! empty( $filters['stock_status'] ) ) {
 
 		$args['stock_status'] = $filters['stock_status'];
 
@@ -81,7 +80,7 @@ function bpm_get_products($filters = array())
 	/*
 	 * Filter by product status.
 	 */
-	if (!empty($filters['status'])) {
+	if ( ! empty( $filters['status'] ) ) {
 
 		$args['status'] = $filters['status'];
 
@@ -92,7 +91,7 @@ function bpm_get_products($filters = array())
 	 */
 	$args['paginate'] = true;
 
-	return wc_get_products($args);
+	return wc_get_products( $args );
 }
 
 
@@ -105,14 +104,14 @@ function bpm_get_products($filters = array())
  * @param array $query_vars  WooCommerce product query variables.
  * @return array
  */
-function bpm_handle_product_search( $query, $query_vars ) {
+function bpmx_handle_product_search( $query, $query_vars ) {
 
-	if ( empty( $query_vars['bpm_search'] ) ) {
+	if ( empty( $query_vars['bpmx_search'] ) ) {
 		return $query;
 	}
 
 	$search = sanitize_text_field(
-		$query_vars['bpm_search']
+		$query_vars['bpmx_search']
 	);
 
 	$query['s'] = $search;
@@ -122,7 +121,7 @@ function bpm_handle_product_search( $query, $query_vars ) {
 
 add_filter(
 	'woocommerce_product_data_store_cpt_get_products_query',
-	'bpm_handle_product_search',
+	'bpmx_handle_product_search',
 	10,
 	2
 );

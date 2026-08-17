@@ -1,12 +1,13 @@
 <?php
-if (!defined('ABSPATH')) {
+
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
 
-<div class="bpm-product-filters">
+<div class="bpmx-product-filters">
 
-	<div class="bpm-product-filters-header">
+	<div class="bpmx-product-filters-header">
 
 		<h2>Filter Products</h2>
 
@@ -16,23 +17,27 @@ if (!defined('ABSPATH')) {
 
 	</div>
 
-	<div class="bpm-product-filter">
+	<div class="bpmx-product-filter">
 
-		<label for="bpm-search">
+		<label for="bpmx-search">
 			Search
 		</label>
 
-		<input type="search" id="bpm-search" placeholder="Search products">
+		<input
+			type="search"
+			id="bpmx-search"
+			placeholder="Search products"
+		>
 
 	</div>
 
-	<div class="bpm-product-filter">
+	<div class="bpmx-product-filter">
 
-		<label for="bpm-category">
+		<label for="bpmx-category">
 			Category
 		</label>
 
-		<select id="bpm-category">
+		<select id="bpmx-category">
 
 			<option value="">
 				All Categories
@@ -42,19 +47,19 @@ if (!defined('ABSPATH')) {
 
 			$categories = get_terms(
 				array(
-					'taxonomy' => 'product_cat',
+					'taxonomy'   => 'product_cat',
 					'hide_empty' => false,
 				)
 			);
 
 			?>
 
-			<?php if (!is_wp_error($categories)): ?>
+			<?php if ( ! is_wp_error( $categories ) ) : ?>
 
-				<?php foreach ($categories as $category): ?>
+				<?php foreach ( $categories as $category ) : ?>
 
-					<option value="<?php echo esc_attr($category->slug); ?>">
-						<?php echo esc_html($category->name); ?>
+					<option value="<?php echo esc_attr( $category->slug ); ?>">
+						<?php echo esc_html( $category->name ); ?>
 					</option>
 
 				<?php endforeach; ?>
@@ -65,13 +70,13 @@ if (!defined('ABSPATH')) {
 
 	</div>
 
-	<div class="bpm-product-filter">
+	<div class="bpmx-product-filter">
 
-		<label for="bpm-type">
+		<label for="bpmx-type">
 			Type
 		</label>
 
-		<select id="bpm-type">
+		<select id="bpmx-type">
 
 			<option value="">
 				All Types
@@ -97,13 +102,13 @@ if (!defined('ABSPATH')) {
 
 	</div>
 
-	<div class="bpm-product-filter">
+	<div class="bpmx-product-filter">
 
-		<label for="bpm-stock-status">
+		<label for="bpmx-stock-status">
 			Stock Status
 		</label>
 
-		<select id="bpm-stock-status">
+		<select id="bpmx-stock-status">
 
 			<option value="">
 				All Stock Statuses
@@ -125,13 +130,13 @@ if (!defined('ABSPATH')) {
 
 	</div>
 
-	<div class="bpm-product-filter">
+	<div class="bpmx-product-filter">
 
-		<label for="bpm-status">
+		<label for="bpmx-status">
 			Status
 		</label>
 
-		<select id="bpm-status">
+		<select id="bpmx-status">
 
 			<option value="">
 				All Statuses

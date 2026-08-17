@@ -1,12 +1,13 @@
 <?php
-if (!defined('ABSPATH')) {
+
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
 
-<div class="bpm-card">
+<div class="bpmx-card">
 
-	<div class="bpm-card__header">
+	<div class="bpmx-card__header">
 
 		<h2>Products</h2>
 
@@ -16,16 +17,19 @@ if (!defined('ABSPATH')) {
 
 	</div>
 
-	<div class="bpm-table-wrapper">
+	<div class="bpmx-table-wrapper">
 
-		<table class="bpm-product-table">
+		<table class="bpmx-product-table">
 
 			<thead>
 
 				<tr>
 
 					<th>
-						<input type="checkbox" id="bpm-select-all-products">
+						<input
+							type="checkbox"
+							id="bpmx-select-all-products"
+						>
 					</th>
 
 					<th>Product</th>
@@ -48,41 +52,46 @@ if (!defined('ABSPATH')) {
 
 			<tbody>
 
-				<?php if (!empty($products)): ?>
+				<?php if ( ! empty( $products ) ) : ?>
 
-					<?php foreach ($products as $product): ?>
+					<?php foreach ( $products as $product ) : ?>
 
 						<?php
 
 						/*
-						 * Categories
+						 * Categories.
 						 */
 						$category_names = array();
 
-						foreach ($product->get_category_ids() as $category_id) {
+						foreach ( $product->get_category_ids() as $category_id ) {
 
-							$category = get_term($category_id, 'product_cat');
+							$category = get_term(
+								$category_id,
+								'product_cat'
+							);
 
-							if ($category && !is_wp_error($category)) {
+							if ( $category && ! is_wp_error( $category ) ) {
 								$category_names[] = $category->name;
 							}
 						}
 
 						/*
-						 * Product Type
+						 * Product Type.
 						 */
-						$product_type = ucfirst($product->get_type());
+						$product_type = ucfirst(
+							$product->get_type()
+						);
 
 						/*
-						 * Stock Display
+						 * Stock Display.
 						 */
-						if ($product->get_manage_stock()) {
+						if ( $product->get_manage_stock() ) {
 
 							$stock_display = $product->get_stock_quantity();
 
 						} else {
 
-							switch ($product->get_stock_status()) {
+							switch ( $product->get_stock_status() ) {
 
 								case 'outofstock':
 									$stock_display = 'Out of stock';
@@ -104,25 +113,34 @@ if (!defined('ABSPATH')) {
 
 							<td>
 
-								<input type="checkbox" class="bpm-product-checkbox" name="products[]"
-									value="<?php echo esc_attr($product->get_id()); ?>">
+								<input
+									type="checkbox"
+									class="bpmx-product-checkbox"
+									name="products[]"
+									value="<?php echo esc_attr( $product->get_id() ); ?>"
+								>
 
 							</td>
 
 							<td>
-								<?php echo esc_html($product->get_name()); ?>
+								<?php echo esc_html( $product->get_name() ); ?>
 							</td>
 
 							<td>
-								<?php echo esc_html($product->get_sku()); ?>
+								<?php echo esc_html( $product->get_sku() ); ?>
 							</td>
 
 							<td>
 
 								<?php
 
-								echo !empty($category_names)
-									? esc_html(implode(', ', $category_names))
+								echo ! empty( $category_names )
+									? esc_html(
+										implode(
+											', ',
+											$category_names
+										)
+									)
 									: '—';
 
 								?>
@@ -130,26 +148,26 @@ if (!defined('ABSPATH')) {
 							</td>
 
 							<td>
-								<?php echo esc_html($product_type); ?>
+								<?php echo esc_html( $product_type ); ?>
 							</td>
 
 							<td>
-								<?php echo wp_kses_post(wc_price($product->get_price())); ?>
+								<?php echo wp_kses_post( wc_price( $product->get_price() ) ); ?>
 							</td>
 
 							<td>
-								<?php echo esc_html($stock_display); ?>
+								<?php echo esc_html( $stock_display ); ?>
 							</td>
 
 							<td>
-								<?php echo esc_html(ucfirst($product->get_status())); ?>
+								<?php echo esc_html( ucfirst( $product->get_status() ) ); ?>
 							</td>
 
 						</tr>
 
 					<?php endforeach; ?>
 
-				<?php else: ?>
+				<?php else : ?>
 
 					<tr>
 

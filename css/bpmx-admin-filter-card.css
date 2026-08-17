@@ -2,7 +2,7 @@
    Product Filters
 --------------------------------- */
 
-.bpm-product-filters {
+.bpmx-product-filters {
     padding: 24px;
     background: #fff;
     border: 1px solid #dcdcde;
@@ -16,11 +16,11 @@
    Header
 --------------------------------- */
 
-.bpm-product-filters-header {
+.bpmx-product-filters-header {
     margin-bottom: 20px;
 }
 
-.bpm-product-filters-header h2 {
+.bpmx-product-filters-header h2 {
     margin: 0 0 6px;
     font-size: 20px;
     line-height: 1.4;
@@ -28,7 +28,7 @@
     color: #1d2327;
 }
 
-.bpm-product-filters-header p {
+.bpmx-product-filters-header p {
     margin: 0;
     max-width: 720px;
     color: #646970;
@@ -41,13 +41,13 @@
    Filter Grid
 --------------------------------- */
 
-.bpm-product-filters {
+.bpmx-product-filters {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
 }
 
-.bpm-product-filters-header {
+.bpmx-product-filters-header {
     grid-column: 1 / -1;
 }
 
@@ -56,11 +56,11 @@
    Filter Fields
 --------------------------------- */
 
-.bpm-product-filter {
+.bpmx-product-filter {
     min-width: 0;
 }
 
-.bpm-product-filter label {
+.bpmx-product-filter label {
     display: block;
     margin-bottom: 6px;
     font-size: 13px;
@@ -73,8 +73,8 @@
    Inputs & Selects
 --------------------------------- */
 
-.bpm-product-filter input[type="search"],
-.bpm-product-filter select {
+.bpmx-product-filter input[type="search"],
+.bpmx-product-filter select {
     width: 100%;
     min-height: 40px;
     padding: 0 10px;
@@ -94,8 +94,8 @@
         box-shadow 0.15s ease;
 }
 
-.bpm-product-filter input[type="search"]:focus,
-.bpm-product-filter select:focus {
+.bpmx-product-filter input[type="search"]:focus,
+.bpmx-product-filter select:focus {
     border-color: #2271b1;
     outline: none;
     box-shadow: 0 0 0 1px #2271b1;
@@ -109,11 +109,11 @@
 /* Tablet */
 @media (max-width: 900px) {
 
-    .bpm-product-filters {
+    .bpmx-product-filters {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .bpm-product-filter:first-of-type {
+    .bpmx-product-filter:first-of-type {
         grid-column: 1 / -1;
     }
 }
@@ -122,22 +122,22 @@
 /* Mobile */
 @media (max-width: 480px) {
 
-    .bpm-product-filters {
+    .bpmx-product-filters {
         padding: 16px;
         grid-template-columns: 1fr;
         gap: 14px;
         border-radius: 4px;
     }
 
-    .bpm-product-filters-header {
+    .bpmx-product-filters-header {
         margin-bottom: 4px;
     }
 
-    .bpm-product-filters-header h2 {
+    .bpmx-product-filters-header h2 {
         font-size: 18px;
     }
 
-    .bpm-product-filter:first-of-type {
+    .bpmx-product-filter:first-of-type {
         grid-column: auto;
     }
 }
@@ -147,7 +147,7 @@
    Product Table Footer
 --------------------------------- */
 
-.bpm-product-table-footer {
+.bpmx-product-table-footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -162,7 +162,7 @@
    Products Per Page
 --------------------------------- */
 
-.bpm-products-per-page {
+.bpmx-products-per-page {
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -170,7 +170,7 @@
 	margin: 0;
 }
 
-.bpm-products-per-page label {
+.bpmx-products-per-page label {
 	margin: 0;
 
 	color: #50575e;
@@ -178,7 +178,7 @@
 	font-weight: 500;
 }
 
-.bpm-products-per-page select {
+.bpmx-products-per-page select {
 	width: auto;
 	min-width: 65px;
 	min-height: 36px;
@@ -197,7 +197,7 @@
 	cursor: pointer;
 }
 
-.bpm-products-per-page select:focus {
+.bpmx-products-per-page select:focus {
 	border-color: #2271b1;
 	outline: none;
 	box-shadow: 0 0 0 1px #2271b1;
@@ -208,7 +208,7 @@
    Pagination
 --------------------------------- */
 
-#bpm-product-pagination {
+#bpmx-product-pagination {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -219,7 +219,7 @@
 /* Remove the default paragraph-like spacing
    if WordPress/plugin styles affect buttons */
 
-#bpm-product-pagination .button {
+#bpmx-product-pagination .button {
 	margin: 0;
 }
 
@@ -230,17 +230,17 @@
 
 @media (max-width: 600px) {
 
-	.bpm-product-table-footer {
+	.bpmx-product-table-footer {
 		flex-direction: column;
 		align-items: stretch;
 		gap: 14px;
 	}
 
-	.bpm-products-per-page {
+	.bpmx-products-per-page {
 		justify-content: space-between;
 	}
 
-	#bpm-product-pagination {
+	#bpmx-product-pagination {
 		justify-content: center;
 		flex-wrap: wrap;
 	}

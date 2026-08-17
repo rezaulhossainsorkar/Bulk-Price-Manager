@@ -2,11 +2,11 @@
    Bulk Price Manager
 --------------------------------- */
 
-.bpm-card__header {
+.bpmx-card__header {
     margin-bottom: 24px;
 }
 
-.bpm-card__header h2 {
+.bpmx-card__header h2 {
     margin: 0 0 6px;
     font-size: 24px;
     line-height: 1.3;
@@ -14,7 +14,7 @@
     color: #1d2327;
 }
 
-.bpm-card__header p {
+.bpmx-card__header p {
     margin: 0;
     max-width: 720px;
     color: #646970;
@@ -27,7 +27,7 @@
    Rule Grid
 --------------------------------- */
 
-.bpm-rule-grid {
+.bpmx-rule-grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
@@ -39,7 +39,7 @@
    Rule Card
 --------------------------------- */
 
-.bpm-rule {
+.bpmx-rule {
     padding: 24px;
     background: #fff;
     border: 1px solid #dcdcde;
@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 
-.bpm-rule h3 {
+.bpmx-rule h3 {
     margin: 0 0 6px;
     font-size: 17px;
     line-height: 1.4;
@@ -55,7 +55,7 @@
     color: #1d2327;
 }
 
-.bpm-rule > p {
+.bpmx-rule > p {
     margin: 0 0 20px;
     max-width: 800px;
     color: #646970;
@@ -68,17 +68,17 @@
    Form Fields
 --------------------------------- */
 
-.bpm-inline-fields {
+.bpmx-inline-fields {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 }
 
-.bpm-inline-fields > div {
+.bpmx-inline-fields > div {
     min-width: 0;
 }
 
-.bpm-inline-fields label {
+.bpmx-inline-fields label {
     display: block;
     margin-bottom: 6px;
     font-size: 13px;
@@ -91,8 +91,8 @@
    Inputs
 --------------------------------- */
 
-.bpm-inline-fields select,
-.bpm-inline-fields input[type="number"] {
+.bpmx-inline-fields select,
+.bpmx-inline-fields input[type="number"] {
     width: 100%;
     min-height: 40px;
     padding: 0 10px;
@@ -112,8 +112,8 @@
         box-shadow 0.15s ease;
 }
 
-.bpm-inline-fields select:focus,
-.bpm-inline-fields input[type="number"]:focus {
+.bpmx-inline-fields select:focus,
+.bpmx-inline-fields input[type="number"]:focus {
     border-color: #2271b1;
     outline: none;
     box-shadow: 0 0 0 1px #2271b1;
@@ -127,15 +127,15 @@
 /* Tablet */
 @media (max-width: 782px) {
 
-    .bpm-rule {
+    .bpmx-rule {
         padding: 20px;
     }
 
-    .bpm-inline-fields {
+    .bpmx-inline-fields {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .bpm-inline-fields > div:last-child {
+    .bpmx-inline-fields > div:last-child {
         grid-column: 1 / -1;
     }
 }
@@ -144,33 +144,33 @@
 /* Mobile */
 @media (max-width: 480px) {
 
-    .bpm-card__header {
+    .bpmx-card__header {
         margin-bottom: 18px;
     }
 
-    .bpm-card__header h2 {
+    .bpmx-card__header h2 {
         font-size: 20px;
     }
 
-    .bpm-rule {
+    .bpmx-rule {
         padding: 16px;
         border-radius: 4px;
     }
 
-    .bpm-rule h3 {
+    .bpmx-rule h3 {
         font-size: 16px;
     }
 
-    .bpm-rule > p {
+    .bpmx-rule > p {
         margin-bottom: 18px;
     }
 
-    .bpm-inline-fields {
+    .bpmx-inline-fields {
         grid-template-columns: 1fr;
         gap: 14px;
     }
 
-    .bpm-inline-fields > div:last-child {
+    .bpmx-inline-fields > div:last-child {
         grid-column: auto;
     }
 }
