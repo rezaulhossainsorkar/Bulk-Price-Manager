@@ -3,9 +3,10 @@
  * Plugin Name:       BPMX Pricing Rules for WooCommerce
  * Plugin URI:        https://github.com/rezaulhossainsorkar/bpmx-pricing-rules-for-woocommerce
  * Description:       Manage WooCommerce product pricing in bulk with flexible rule-based automation.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
+ * Requires Plugins:  woocommerce
  * Author:            Rezaul Hossain Sorkar
  * Author URI:        https://profiles.wordpress.org/rezaulhossainsorkar/
  * License:           GPL v2 or later
